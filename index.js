@@ -21,7 +21,7 @@ const rmd160 = x => crypto.createHash('rmd160').update(x).digest('hex');
 
 const makePrivateKey = () => {
   const privateKey = crypto.randomBytes(24);
-  const time = process.hrtime.bigint().toString(16);
+  const time = dayjs().valueOf().toString(16);
   return toHex(privateKey) + pad(time, 16);
 };
 
