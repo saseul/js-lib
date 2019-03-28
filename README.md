@@ -1,7 +1,7 @@
 # saseul.js - SASEUL Origin JavaScript Library
 
 ```
-npm ci
+npm install
 
 npm test
 
