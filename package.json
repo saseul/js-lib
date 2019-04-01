@@ -14,8 +14,11 @@
   "keywords": [
     "SASEUL"
   ],
-  "author": "ArtiFriends",
-  "license": "MIT",
+  "author": {
+		"name":"artiFriends",
+		"email":"saseul@artifriends.com"
+	},
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/saseul/js-lib/issues"
   },
