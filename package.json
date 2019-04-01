@@ -15,9 +15,9 @@
     "SASEUL"
   ],
   "author": {
-		"name":"artiFriends",
-		"email":"saseul@artifriends.com"
-	},
+    "name":"artiFriends",
+    "email":"saseul@artifriends.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/saseul/js-lib/issues"
