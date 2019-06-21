@@ -12,11 +12,12 @@
     "url": "git+https://github.com/saseul/js-lib.git"
   },
   "keywords": [
-    "SASEUL"
+    "SASEUL",
+    "blockchain"
   ],
   "author": {
-    "name":"artiFriends",
-    "email":"saseul@artifriends.com"
+    "name": "artiFriends",
+    "email": "saseul@artifriends.com"
   },
   "license": "ISC",
   "bugs": {
@@ -24,12 +25,12 @@
   },
   "homepage": "https://saseul.com/",
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "jest": "^24.5.0"
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "dayjs": "^1.8.11",
+    "axios": "^0.18.1",
+    "dayjs": "^1.8.14",
     "tweetnacl": "^1.0.1"
   }
 }
