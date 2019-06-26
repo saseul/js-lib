@@ -98,11 +98,14 @@ const getBalance = async (account) => {
   return await sendRequest(request, account);
 };
 
-const getTransactions = async ({ address }) => {
-  const { body } = await http.request('/simple/gettransactions', {
-    address,
-  });
-  return body;
+const getTransactions = async (account) => {
+  const request = {
+    version: '0.5',
+    type: 'GetTransactions',
+    from: account.address,
+    timestamp: dayjs().valueOf() * 1000,
+  };
+  return await sendRequest(request, account);
 };
 
 module.exports = {
