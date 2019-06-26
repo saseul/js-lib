@@ -1,6 +1,6 @@
 {
   "name": "saseul",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "SASEUL Origin JavaScript Library",
   "main": "index.js",
   "scripts": {
