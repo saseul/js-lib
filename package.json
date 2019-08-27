@@ -26,11 +26,11 @@
   "homepage": "https://saseul.com/",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   },
   "dependencies": {
     "axios": "^0.18.1",
-    "dayjs": "^1.8.14",
+    "dayjs": "^1.8.15",
     "tweetnacl": "^1.0.1"
   }
 }
