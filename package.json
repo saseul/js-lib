@@ -1,6 +1,6 @@
 {
   "name": "saseul",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "SASEUL Origin JavaScript Library",
   "main": "index.js",
   "scripts": {
@@ -12,11 +12,12 @@
     "url": "git+https://github.com/saseul/js-lib.git"
   },
   "keywords": [
-    "SASEUL"
+    "SASEUL",
+    "blockchain"
   ],
   "author": {
-    "name":"artiFriends",
-    "email":"saseul@artifriends.com"
+    "name": "artiFriends",
+    "email": "saseul@artifriends.com"
   },
   "license": "ISC",
   "bugs": {
@@ -24,12 +25,12 @@
   },
   "homepage": "https://saseul.com/",
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "jest": "^24.5.0"
+    "eslint": "^5.16.0",
+    "jest": "^24.9.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "dayjs": "^1.8.11",
+    "axios": "^0.18.1",
+    "dayjs": "^1.8.15",
     "tweetnacl": "^1.0.1"
   }
 }
