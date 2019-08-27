@@ -4,11 +4,5 @@
 
 ```bash
 # Install the dependencies
-npm install
-
-# Run tests
-npm test
-
-# Lint and fix all
-npm run lint
+npm install saseul
 ```
