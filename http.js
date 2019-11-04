@@ -5,13 +5,8 @@ const instance = axios.create({
 });
 
 const request = async (path, params) => {
-  const { data } = await instance.get(path, { params });
-
-  if (data.status === 'fail') {
-    throw Object.assign({}, data, { message: data.msg });
-  }
-
-  return { body: data.data };
+  const { body } = await instance.get(path, { params });
+  return { body };
 };
 
 module.exports = {
