@@ -1,6 +1,6 @@
 {
   "name": "saseul",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "SASEUL Origin JavaScript Library",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "axios": "^0.18.1",
-    "dayjs": "^1.8.15",
+    "dayjs": "^1.8.16",
     "tweetnacl": "^1.0.1"
   }
 }
