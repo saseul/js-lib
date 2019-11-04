@@ -30,7 +30,7 @@ describe('Saseul.js', () => {
     const privateKey = '0'.repeat(32 * 2);
 
     const transaction = {
-      version: '0.5',
+      version: '1.0',
       type: 'SendCoin',
       from: '0xFROM',
       to: '0xTO',
@@ -50,7 +50,7 @@ describe('Saseul.js', () => {
       const signature = sign(txid, this.account);
 
       expect(signature).toHaveLength(64 * 2);
-      expect(signature).toContain('dd30a62');
+      expect(signature).toContain('6b54c5e');
     });
   });
 
@@ -58,7 +58,7 @@ describe('Saseul.js', () => {
     const privateKey = '0'.repeat(32 * 2);
 
     const transaction = {
-      version: '0.5',
+      version: '1.0',
       type: 'SendCoin',
       from: '0xFROM',
       to: '0xTO',
@@ -74,10 +74,10 @@ describe('Saseul.js', () => {
     it('returns signed transaction', () => {
       const signedTransaction = signTransaction(transaction, this.account);
 
-      expect(signedTransaction.thash).toContain('3f2cf30');
+      expect(signedTransaction.thash).toContain('24af369');
       expect(signedTransaction.transaction).toContain('"type":"SendCoin"');
       expect(signedTransaction.public_key).toContain('3b6a27b');
-      expect(signedTransaction.signature).toContain('dd30a62');
+      expect(signedTransaction.signature).toContain('6b54c5e');
     });
   });
 
@@ -85,7 +85,7 @@ describe('Saseul.js', () => {
     const privateKey = '0'.repeat(32 * 2);
 
     const request = {
-      version: '0.5',
+      version: '1.0',
       type: 'GetBalance',
       from: '0xFROM',
       timestamp: 1000000,
@@ -100,7 +100,7 @@ describe('Saseul.js', () => {
 
       expect(signedRequest.request).toContain('"type":"GetBalance"');
       expect(signedRequest.public_key).toContain('3b6a27b');
-      expect(signedRequest.signature).toContain('cee2f80');
+      expect(signedRequest.signature).toContain('1e66057');
     });
   });
 });
