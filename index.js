@@ -67,7 +67,7 @@ const sendTransaction = async (transaction, account) => {
   const { body } = await http.request('/transaction', signedTransaction);
   return {
     thash: signedTransaction.thash,
-    transaction: body.transaction,
+    body,
   };
 };
 
