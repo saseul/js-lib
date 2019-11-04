@@ -67,7 +67,7 @@ const sendTransaction = async (transaction, account) => {
   const { body } = await http.request('/transaction', signedTransaction);
   return {
     thash: signedTransaction.thash,
-    transaction: body.transaction,
+    body,
   };
 };
 
@@ -88,26 +88,6 @@ const sendRequest = async (request, account) => {
   return body;
 };
 
-const getBalance = async (account) => {
-  const request = {
-    version: '0.5',
-    type: 'GetBalance',
-    from: account.address,
-    timestamp: dayjs().valueOf() * 1000,
-  };
-  return await sendRequest(request, account);
-};
-
-const getTransactions = async (account) => {
-  const request = {
-    version: '0.5',
-    type: 'GetTransactions',
-    from: account.address,
-    timestamp: dayjs().valueOf() * 1000,
-  };
-  return await sendRequest(request, account);
-};
-
 module.exports = {
   pad,
   sha256,
@@ -118,6 +98,4 @@ module.exports = {
   sendTransaction,
   signRequest,
   sendRequest,
-  getBalance,
-  getTransactions,
 };
