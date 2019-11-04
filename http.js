@@ -5,8 +5,8 @@ const instance = axios.create({
 });
 
 const request = async (path, params) => {
-  const { body } = await instance.get(path, { params });
-  return { body };
+  const { data } = await instance.get(path, { params });
+  return { body: data };
 };
 
 module.exports = {
