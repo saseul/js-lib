@@ -29,7 +29,7 @@
     "jest": "^24.9.0"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "dayjs": "^1.8.16",
     "tweetnacl": "^1.0.1"
   }
